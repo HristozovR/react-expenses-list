@@ -36,8 +36,7 @@ const AppReducer = (state, action) => {
               const nameB = b.text.toUpperCase();
               if (nameA < nameB) {
                 return -1;
-              }
-              if (nameA > nameB) {
+              } else {
                 return 1;
               }
             }),
@@ -50,8 +49,7 @@ const AppReducer = (state, action) => {
               const nameB = b.text.toUpperCase();
               if (nameA > nameB) {
                 return -1;
-              }
-              if (nameA < nameB) {
+              } else {
                 return 1;
               }
             }),
