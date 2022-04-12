@@ -23,7 +23,7 @@ export const ExpenseProvider = ({ children }) => {
     dispatch({ type: 'DELETE', payload: id });
   };
 
-  const AddTransaction = (transaction) => {
+  const аddTransaction = (transaction) => {
     dispatch({ type: 'ADD', payload: transaction });
   };
 
@@ -36,7 +36,7 @@ export const ExpenseProvider = ({ children }) => {
       value={{
         transactions: state.transactions,
         deleteTransaction,
-        AddTransaction,
+        addTransaction,
         sortTransactions,
       }}
     >
